@@ -1,0 +1,53 @@
+/*MADE BY PLOPILPY for meb.trolled.lol. Reverts the stupid meb theme to myspace like it's SUPPOSED to be*/
+
+/*lines 36, 41, and 43 contain references to "id=10". This ID should be set to your own when being used on meb, because it specifically targets your OWN ID and it won't work if you set it to another ID because it's supposed to look for a HREF that contains your own ID.*/
+
+.headerTop{
+background-color: #003399;
+}
+
+.headerBottom{
+background-color: #6699cc;
+}
+
+#siteTitle{
+color:transparent;
+}
+/* myspace css reverter by plopilpy */
+
+#siteTitle:after{
+color:white;
+content:"myspace.coveryourselfinoil.com";
+float:left;
+}
+
+.formerly{
+display: none;}
+
+.info{
+background-color: #fc9;
+color: #cc6633;}
+
+.contactInfoTop{
+background-color: #6699cc;}
+
+/*PUT YOUR USER ID IN PLACE OF ID 10 TO MAKE THIS WORK*/
+
+a[href="//meb.trolled.lol?id=10"]{
+font-size:0px;
+font-style: underline;
+}
+
+a[href="//meb.trolled.lol?id=10"]:after{
+font-size: 16px;
+content:"myspace.coveryourselfinoil.com?id=10";
+text-decoration: underline;
+}
+
+.url:not(small){
+font-size:0px;
+}
+.url:not(small):before{
+font-size:16px;
+content:"Myspace URL:";
+}
